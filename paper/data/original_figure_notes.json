@@ -1,0 +1,6 @@
+{
+  "fig01_training_and_validation": "B/C curves show mean ± sample standard deviation across seeds 42, 43 and 44 at each epoch. No smoothing is applied. Training loss and validation mR use different y-axis scales.",
+  "fig02_test_bidirectional_recall": "Test galleries contain 1000 images and 5000 captions. A is one deterministic zero-shot baseline; B/C bars show means across three seeds, with sample standard deviations. Error bars are not confidence intervals.",
+  "fig03_trainable_parameters_vs_test_mR": "Trainable parameters follow each training strategy. A has zero trainable parameters but retains the full pretrained model. B/C mR values are three-seed means with sample standard deviations. Points represent different strategies, not a rank sweep.",
+  "fig04_encoding_latency_and_throughput": "Single Tesla T4, FP32, seed42 checkpoints, unmerged LoRA. Latency bars show synchronized wall-clock means over 100 calls. Throughput uses five rounds of ten batch32 calls. Preprocessing, file I/O and CPU-GPU transfer are outside timing. These are timing measurements, not three-training-seed averages."
+}

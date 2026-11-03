@@ -1,0 +1,42 @@
+{
+  "change": "legend placement and plot margins only",
+  "source": "results/complexity/inference_speed.csv",
+  "source_sha256": "fb3161bf4420b0a69171d9ae508425227a31a7360018e4f06c22b93c613bf954",
+  "numeric_values": [
+    {
+      "Group": "A",
+      "Image_B1_mean_ms": 6.471518270009256,
+      "Image_B1_p95_ms": 7.394492099865602,
+      "Text77_B1_mean_ms": 7.76520715998231,
+      "Text77_B1_p95_ms": 8.970780100662523,
+      "Image_B32_images_s": 362.4610239601281,
+      "Text77_B32_texts_s": 500.9789444816269,
+      "T2I_cached_Top5_mean_ms": 0.0667919399984384,
+      "I2T_cached_Top5_mean_ms": 0.1057914100101697
+    },
+    {
+      "Group": "B",
+      "Image_B1_mean_ms": 6.8641816499985,
+      "Image_B1_p95_ms": 9.806479850112735,
+      "Text77_B1_mean_ms": 7.596323720017608,
+      "Text77_B1_p95_ms": 8.59946559958189,
+      "Image_B32_images_s": 346.2174302667171,
+      "Text77_B32_texts_s": 497.0435259284715,
+      "T2I_cached_Top5_mean_ms": 0.0695234450631687,
+      "I2T_cached_Top5_mean_ms": 0.1103198200144106
+    },
+    {
+      "Group": "C",
+      "Image_B1_mean_ms": 6.546323259990459,
+      "Image_B1_p95_ms": 7.597121900334969,
+      "Text77_B1_mean_ms": 9.72679453996534,
+      "Text77_B1_p95_ms": 11.166923949713237,
+      "Image_B32_images_s": 360.7997568499418,
+      "Text77_B32_texts_s": 478.2041274487843,
+      "T2I_cached_Top5_mean_ms": 0.0735694399963904,
+      "I2T_cached_Top5_mean_ms": 0.106366489994798
+    }
+  ],
+  "original_archive_modified": false,
+  "pdf_legend_text_and_page_bounds": "passed"
+}

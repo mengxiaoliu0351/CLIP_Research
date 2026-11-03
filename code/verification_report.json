@@ -1,0 +1,36 @@
+{
+  "scope": "CPU syntax/schema/metric/evidence checks; no GPU model execution",
+  "notebooks": [
+    {
+      "file": "01_experiment_record.ipynb",
+      "code_cells": 24,
+      "syntax": "passed",
+      "schema": "passed"
+    },
+    {
+      "file": "02_train_from_scratch.ipynb",
+      "code_cells": 24,
+      "syntax": "passed",
+      "schema": "passed"
+    },
+    {
+      "file": "03_restore_saved_results.ipynb",
+      "code_cells": 11,
+      "syntax": "passed",
+      "schema": "passed"
+    }
+  ],
+  "checks": [
+    "24 original code cells and output counts preserved; 10 embedded figures",
+    "I2T multi-positive minimum rank, T2I mapping, R@K boundaries, even median and reordered captions",
+    "Six saved summaries contain 30 epochs; paired sampling hashes and controlled hyperparameters match",
+    "Seven captured test results and paired C-B deltas agree with reported values",
+    "Organized source hashes match provenance; helper scripts parse",
+    "Uploaded restore source matches the validated entry; runtime evidence provenance is explicit"
+  ],
+  "gpu_validation": {
+    "restore": "Validated through user-reported Kaggle console outputs; 11 organized code cells match the source-only export.",
+    "source_export_embedded_outputs": 0,
+    "full_training": "Static/CPU checks only; not rerun in a new Kaggle session."
+  }
+}

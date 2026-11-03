@@ -1,0 +1,5 @@
+# Optional saved-data checks and figure regeneration; not required to compile LaTeX.
+numpy
+matplotlib
+Pillow
+PyMuPDF

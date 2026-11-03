@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "page_count": 9,
+  "figures": 5,
+  "tables": 6,
+  "references": 12,
+  "training_runs": 6,
+  "training_epochs": 30,
+  "test_records": 7,
+  "checks": [
+    "All seven final-test records agree with CSV and six-Recall mR definition.",
+    "Three-seed mR mean, sample SD, and paired C-B gain reproduce saved values.",
+    "Six saved five-epoch histories use paired data, weights, sampling, and hyperparameters.",
+    "Saved A/C seed42 query ranks reproduce full-gallery Recall and MedianRank.",
+    "Parameter counts and theoretical MAC/FLOP arithmetic are consistent.",
+    "Qualitative-case ground-truth ranks match saved final-test arrays.",
+    "All twelve references, labels, five figures, and six tables resolve; no overfull hbox.",
+    "Compiled PDF has letter pages, embedded fonts, no Type3 fonts, and author placeholders."
+  ],
+  "scope": "Saved-evidence and compiled-document checks. No new training or test inference.",
+  "author_information": "Placeholders pending user confirmation.",
+  "build_engine": "Tectonic 0.17.0"
+}

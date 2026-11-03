@@ -1,0 +1,127 @@
+{
+  "input": {
+    "image": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "text": [
+      1,
+      77
+    ],
+    "real_image_filename": "1007129816.jpg",
+    "real_caption": "The man with pierced ears is wearing glasses and an orange hat."
+  },
+  "convention": {
+    "flops_per_mac": 2,
+    "attention": "dense full-length QK^T and attention @ V",
+    "lora": "unmerged; both low-rank linear operations included",
+    "included": [
+      "Conv2d",
+      "Linear",
+      "attention matrix products",
+      "manual LoRA matrix products"
+    ],
+    "excluded": [
+      "bias and residual additions",
+      "normalization",
+      "activation",
+      "softmax",
+      "embedding lookup",
+      "LoRA scaling",
+      "gallery scoring and ranking"
+    ],
+    "scope": "theoretical dominant-operator compute; not hardware measurement"
+  },
+  "results": [
+    {
+      "Group": "A",
+      "Model": "A: Original CLIP",
+      "TotalParams": 151277313,
+      "TrainableParams": 0,
+      "TrainablePercent": 0.0,
+      "Image_GMACs": 4.40881152,
+      "Text77_GMACs": 2.979770368,
+      "Pair_GMACs": 7.388581888,
+      "Image_GFLOPs": 8.81762304,
+      "Text77_GFLOPs": 5.959540736,
+      "Pair_GFLOPs": 14.777163776
+    },
+    {
+      "Group": "B",
+      "Model": "B: Projection-only",
+      "TotalParams": 151277313,
+      "TrainableParams": 262144,
+      "TrainablePercent": 0.17328705461604807,
+      "Image_GMACs": 4.40881152,
+      "Text77_GMACs": 2.979770368,
+      "Pair_GMACs": 7.388581888,
+      "Image_GFLOPs": 8.81762304,
+      "Text77_GFLOPs": 5.959540736,
+      "Pair_GFLOPs": 14.777163776
+    },
+    {
+      "Group": "C",
+      "Model": "C: LoRA + projection",
+      "TotalParams": 151473921,
+      "TrainableParams": 458752,
+      "TrainablePercent": 0.3028587343427916,
+      "Image_GMACs": 4.40881152,
+      "Text77_GMACs": 2.994909184,
+      "Pair_GMACs": 7.403720704,
+      "Image_GFLOPs": 8.81762304,
+      "Text77_GFLOPs": 5.989818368,
+      "Pair_GFLOPs": 14.807441408
+    }
+  ],
+  "breakdown": {
+    "A": {
+      "image_macs": 4408811520,
+      "text_macs": 2979770368,
+      "image_breakdown": {
+        "conv2d": 115605504,
+        "linear": 4247126016,
+        "attention_matmul": 46080000,
+        "attention_calls": 12
+      },
+      "text_breakdown": {
+        "linear": 2906914816,
+        "attention_matmul": 72855552,
+        "attention_calls": 12
+      }
+    },
+    "B": {
+      "image_macs": 4408811520,
+      "text_macs": 2979770368,
+      "image_breakdown": {
+        "conv2d": 115605504,
+        "linear": 4247126016,
+        "attention_matmul": 46080000,
+        "attention_calls": 12
+      },
+      "text_breakdown": {
+        "linear": 2906914816,
+        "attention_matmul": 72855552,
+        "attention_calls": 12
+      }
+    },
+    "C": {
+      "image_macs": 4408811520,
+      "text_macs": 2994909184,
+      "image_breakdown": {
+        "conv2d": 115605504,
+        "linear": 4247126016,
+        "attention_matmul": 46080000,
+        "attention_calls": 12
+      },
+      "text_breakdown": {
+        "linear": 2906914816,
+        "lora": 15138816,
+        "lora_calls": 24,
+        "attention_matmul": 72855552,
+        "attention_calls": 12
+      }
+    }
+  }
+}

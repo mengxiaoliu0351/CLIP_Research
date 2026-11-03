@@ -1,0 +1,14 @@
+# Known versions from the completed Kaggle experiment.
+# CUDA wheel build used: torch 2.11.0+cu128, torchvision 0.26.0+cu128.
+# This is a dependency record; do not run online installation in offline Kaggle.
+torch==2.11.0
+torchvision==0.26.0
+transformers==5.16.1
+huggingface_hub==1.29.0
+Pillow==13.0.0
+# Auxiliary package versions were not captured in the original environment output.
+numpy
+pandas
+matplotlib
+tqdm
+ipython

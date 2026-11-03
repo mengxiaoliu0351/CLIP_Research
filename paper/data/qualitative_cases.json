@@ -1,0 +1,539 @@
+{
+  "selection_seed": 2026,
+  "cases": [
+    {
+      "direction": "T2I",
+      "case": "both_top1_success",
+      "query_index": 4271,
+      "query_caption": "A man wearing a white helmet is in the water.",
+      "ground_truth_filename": "539676201.jpg",
+      "models": {
+        "A_baseline": {
+          "ground_truth_rank": 1,
+          "top5": [
+            {
+              "rank": 1,
+              "filename": "539676201.jpg",
+              "is_ground_truth": true,
+              "similarity": 0.3253633677959442
+            },
+            {
+              "rank": 2,
+              "filename": "1404832008.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2970776855945587
+            },
+            {
+              "rank": 3,
+              "filename": "3432637363.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.28622227907180786
+            },
+            {
+              "rank": 4,
+              "filename": "396360611.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2812996804714203
+            },
+            {
+              "rank": 5,
+              "filename": "3430607596.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2798105478286743
+            }
+          ]
+        },
+        "C_seed42": {
+          "ground_truth_rank": 1,
+          "top5": [
+            {
+              "rank": 1,
+              "filename": "539676201.jpg",
+              "is_ground_truth": true,
+              "similarity": 0.3041890263557434
+            },
+            {
+              "rank": 2,
+              "filename": "1404832008.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.24780605733394623
+            },
+            {
+              "rank": 3,
+              "filename": "1396064003.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.24580000340938568
+            },
+            {
+              "rank": 4,
+              "filename": "2725508159.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.23614442348480225
+            },
+            {
+              "rank": 5,
+              "filename": "3257107194.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.22755597531795502
+            }
+          ]
+        }
+      },
+      "figure": "T2I_both_top1_success.png",
+      "candidate_count": 2785
+    },
+    {
+      "direction": "T2I",
+      "case": "lora_top1_improvement",
+      "query_index": 1008,
+      "query_caption": "Four people playing instruments underneath a white tent.",
+      "ground_truth_filename": "2506460104.jpg",
+      "models": {
+        "A_baseline": {
+          "ground_truth_rank": 2,
+          "top5": [
+            {
+              "rank": 1,
+              "filename": "4351734575.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.30367937684059143
+            },
+            {
+              "rank": 2,
+              "filename": "2506460104.jpg",
+              "is_ground_truth": true,
+              "similarity": 0.3020525574684143
+            },
+            {
+              "rank": 3,
+              "filename": "3599392711.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2847108840942383
+            },
+            {
+              "rank": 4,
+              "filename": "7438195398.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2841593623161316
+            },
+            {
+              "rank": 5,
+              "filename": "3432637363.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2818540632724762
+            }
+          ]
+        },
+        "C_seed42": {
+          "ground_truth_rank": 1,
+          "top5": [
+            {
+              "rank": 1,
+              "filename": "2506460104.jpg",
+              "is_ground_truth": true,
+              "similarity": 0.25017738342285156
+            },
+            {
+              "rank": 2,
+              "filename": "4351734575.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.24496132135391235
+            },
+            {
+              "rank": 3,
+              "filename": "2802158972.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.23253780603408813
+            },
+            {
+              "rank": 4,
+              "filename": "2678668581.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.23224012553691864
+            },
+            {
+              "rank": 5,
+              "filename": "7438195398.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2277473658323288
+            }
+          ]
+        }
+      },
+      "figure": "T2I_lora_top1_improvement.png",
+      "candidate_count": 673
+    },
+    {
+      "direction": "T2I",
+      "case": "lora_top5_failure",
+      "query_index": 88,
+      "query_caption": "Young people are standing in the store.",
+      "ground_truth_filename": "110671448.jpg",
+      "models": {
+        "A_baseline": {
+          "ground_truth_rank": 10,
+          "top5": [
+            {
+              "rank": 1,
+              "filename": "783994497.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.31463807821273804
+            },
+            {
+              "rank": 2,
+              "filename": "4725026501.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2962922155857086
+            },
+            {
+              "rank": 3,
+              "filename": "4846324908.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2955787777900696
+            },
+            {
+              "rank": 4,
+              "filename": "2465441099.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.29243072867393494
+            },
+            {
+              "rank": 5,
+              "filename": "275175200.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2903824746608734
+            }
+          ]
+        },
+        "C_seed42": {
+          "ground_truth_rank": 9,
+          "top5": [
+            {
+              "rank": 1,
+              "filename": "783994497.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.28484073281288147
+            },
+            {
+              "rank": 2,
+              "filename": "2465441099.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2653445899486542
+            },
+            {
+              "rank": 3,
+              "filename": "4725026501.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.2637639045715332
+            },
+            {
+              "rank": 4,
+              "filename": "4812991208.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.26372233033180237
+            },
+            {
+              "rank": 5,
+              "filename": "4846324908.jpg",
+              "is_ground_truth": false,
+              "similarity": 0.26073166728019714
+            }
+          ]
+        }
+      },
+      "figure": "T2I_lora_top5_failure.png",
+      "candidate_count": 480
+    },
+    {
+      "direction": "I2T",
+      "case": "both_top1_success",
+      "query_index": 646,
+      "query_filename": "4525077213.jpg",
+      "ground_truth_captions": [
+        "Photo of a man sitting on a bench with a sign written in Spanish in background and the reflection of a lady walking from a mirrored wall.",
+        "A middle-aged man in a business suit is seated at a bus stop shelter, with Hispanic writing showing on the shelter's sign.",
+        "A man in a business suit sitting at a bus stop waiting for a bus.",
+        "A man in a suit is sitting at a bus stop.",
+        "One man sitting at a bus stop."
+      ],
+      "models": {
+        "A_baseline": {
+          "best_ground_truth_rank": 1,
+          "top5": [
+            {
+              "rank": 1,
+              "caption_index": 3230,
+              "caption": "Photo of a man sitting on a bench with a sign written in Spanish in background and the reflection of a lady walking from a mirrored wall.",
+              "is_ground_truth": true,
+              "similarity": 0.3477926552295685
+            },
+            {
+              "rank": 2,
+              "caption_index": 3233,
+              "caption": "A man in a suit is sitting at a bus stop.",
+              "is_ground_truth": true,
+              "similarity": 0.3239103853702545
+            },
+            {
+              "rank": 3,
+              "caption_index": 3232,
+              "caption": "A man in a business suit sitting at a bus stop waiting for a bus.",
+              "is_ground_truth": true,
+              "similarity": 0.31763288378715515
+            },
+            {
+              "rank": 4,
+              "caption_index": 3231,
+              "caption": "A middle-aged man in a business suit is seated at a bus stop shelter, with Hispanic writing showing on the shelter's sign.",
+              "is_ground_truth": true,
+              "similarity": 0.31506261229515076
+            },
+            {
+              "rank": 5,
+              "caption_index": 4113,
+              "caption": "A man sits in a chair watching people stroll by.",
+              "is_ground_truth": false,
+              "similarity": 0.314978688955307
+            }
+          ]
+        },
+        "C_seed42": {
+          "best_ground_truth_rank": 1,
+          "top5": [
+            {
+              "rank": 1,
+              "caption_index": 3230,
+              "caption": "Photo of a man sitting on a bench with a sign written in Spanish in background and the reflection of a lady walking from a mirrored wall.",
+              "is_ground_truth": true,
+              "similarity": 0.3033018112182617
+            },
+            {
+              "rank": 2,
+              "caption_index": 3234,
+              "caption": "One man sitting at a bus stop.",
+              "is_ground_truth": true,
+              "similarity": 0.2961641550064087
+            },
+            {
+              "rank": 3,
+              "caption_index": 3233,
+              "caption": "A man in a suit is sitting at a bus stop.",
+              "is_ground_truth": true,
+              "similarity": 0.2936776280403137
+            },
+            {
+              "rank": 4,
+              "caption_index": 3231,
+              "caption": "A middle-aged man in a business suit is seated at a bus stop shelter, with Hispanic writing showing on the shelter's sign.",
+              "is_ground_truth": true,
+              "similarity": 0.28849324584007263
+            },
+            {
+              "rank": 5,
+              "caption_index": 3232,
+              "caption": "A man in a business suit sitting at a bus stop waiting for a bus.",
+              "is_ground_truth": true,
+              "similarity": 0.2860284745693207
+            }
+          ]
+        }
+      },
+      "figure": "I2T_both_top1_success.png",
+      "candidate_count": 750
+    },
+    {
+      "direction": "I2T",
+      "case": "lora_top1_improvement",
+      "query_index": 357,
+      "query_filename": "313385842.jpg",
+      "ground_truth_captions": [
+        "A man dressed in black shorts, a black t-shirt, and a backwards black baseball cap is talking to a man wearing a striped shirt and shorts while standing behind a truck.",
+        "Two males seem to be conversing while standing in front of a truck's back, and behind a metal item, while four people stand around them.",
+        "A semi trailer is inside a building, and people are gathered behind its open rear door where there are displays being set up.",
+        "A group of people are standing in a warehouse.",
+        "People stand in a warehouse."
+      ],
+      "models": {
+        "A_baseline": {
+          "best_ground_truth_rank": 2,
+          "top5": [
+            {
+              "rank": 1,
+              "caption_index": 2730,
+              "caption": "A many in an orange t-shirt, tan shorts and tan and black baseball cap is moving a tall metal cart with sheets of pretzels that is surrounded by similar carts.",
+              "is_ground_truth": false,
+              "similarity": 0.3212777078151703
+            },
+            {
+              "rank": 2,
+              "caption_index": 1788,
+              "caption": "A group of people are standing in a warehouse.",
+              "is_ground_truth": true,
+              "similarity": 0.32055872678756714
+            },
+            {
+              "rank": 3,
+              "caption_index": 1789,
+              "caption": "People stand in a warehouse.",
+              "is_ground_truth": true,
+              "similarity": 0.2866903245449066
+            },
+            {
+              "rank": 4,
+              "caption_index": 3761,
+              "caption": "Several people are standing and staring up at a work of art.",
+              "is_ground_truth": false,
+              "similarity": 0.2866290211677551
+            },
+            {
+              "rank": 5,
+              "caption_index": 1096,
+              "caption": "Two people, wearing white, are painting a wall.",
+              "is_ground_truth": false,
+              "similarity": 0.28338614106178284
+            }
+          ]
+        },
+        "C_seed42": {
+          "best_ground_truth_rank": 1,
+          "top5": [
+            {
+              "rank": 1,
+              "caption_index": 1788,
+              "caption": "A group of people are standing in a warehouse.",
+              "is_ground_truth": true,
+              "similarity": 0.2795570194721222
+            },
+            {
+              "rank": 2,
+              "caption_index": 3761,
+              "caption": "Several people are standing and staring up at a work of art.",
+              "is_ground_truth": false,
+              "similarity": 0.2706647217273712
+            },
+            {
+              "rank": 3,
+              "caption_index": 1789,
+              "caption": "People stand in a warehouse.",
+              "is_ground_truth": true,
+              "similarity": 0.2656448483467102
+            },
+            {
+              "rank": 4,
+              "caption_index": 3764,
+              "caption": "People are admiring a work of art.",
+              "is_ground_truth": false,
+              "similarity": 0.26125773787498474
+            },
+            {
+              "rank": 5,
+              "caption_index": 2730,
+              "caption": "A many in an orange t-shirt, tan shorts and tan and black baseball cap is moving a tall metal cart with sheets of pretzels that is surrounded by similar carts.",
+              "is_ground_truth": false,
+              "similarity": 0.26012542843818665
+            }
+          ]
+        }
+      },
+      "figure": "I2T_lora_top1_improvement.png",
+      "candidate_count": 89
+    },
+    {
+      "direction": "I2T",
+      "case": "lora_top5_failure",
+      "query_index": 446,
+      "query_filename": "3483071906.jpg",
+      "ground_truth_captions": [
+        "A group of kids with an adult in the background coaching them while they are pulling on a green rope.",
+        "Several young boys are pulling a rope in a park.",
+        "Little kids are playing a game of tug-of-war.",
+        "Children fight to win a tug-of-war battle.",
+        "Children are playing tug-of-war."
+      ],
+      "models": {
+        "A_baseline": {
+          "best_ground_truth_rank": 9,
+          "top5": [
+            {
+              "rank": 1,
+              "caption_index": 378,
+              "caption": "Elementary school students play tug-of-war.",
+              "is_ground_truth": false,
+              "similarity": 0.29614704847335815
+            },
+            {
+              "rank": 2,
+              "caption_index": 376,
+              "caption": "Several children are outdoors getting ready to play tug-of-war.",
+              "is_ground_truth": false,
+              "similarity": 0.2876434624195099
+            },
+            {
+              "rank": 3,
+              "caption_index": 379,
+              "caption": "A group of children are playing Tug-of-War.",
+              "is_ground_truth": false,
+              "similarity": 0.284397155046463
+            },
+            {
+              "rank": 4,
+              "caption_index": 1826,
+              "caption": "A group of children play together in a fenced yard as an adult watches.",
+              "is_ground_truth": false,
+              "similarity": 0.28389379382133484
+            },
+            {
+              "rank": 5,
+              "caption_index": 375,
+              "caption": "Some children are playing tug-of-war with a rope while an adult assists.",
+              "is_ground_truth": false,
+              "similarity": 0.28330641984939575
+            }
+          ]
+        },
+        "C_seed42": {
+          "best_ground_truth_rank": 6,
+          "top5": [
+            {
+              "rank": 1,
+              "caption_index": 376,
+              "caption": "Several children are outdoors getting ready to play tug-of-war.",
+              "is_ground_truth": false,
+              "similarity": 0.2799068093299866
+            },
+            {
+              "rank": 2,
+              "caption_index": 3672,
+              "caption": "A woman is standing and talking to a group of children.",
+              "is_ground_truth": false,
+              "similarity": 0.2675651013851166
+            },
+            {
+              "rank": 3,
+              "caption_index": 379,
+              "caption": "A group of children are playing Tug-of-War.",
+              "is_ground_truth": false,
+              "similarity": 0.26576241850852966
+            },
+            {
+              "rank": 4,
+              "caption_index": 1825,
+              "caption": "The girl in the light pink shirt is playing a game with the other children.",
+              "is_ground_truth": false,
+              "similarity": 0.26569584012031555
+            },
+            {
+              "rank": 5,
+              "caption_index": 378,
+              "caption": "Elementary school students play tug-of-war.",
+              "is_ground_truth": false,
+              "similarity": 0.2655380368232727
+            }
+          ]
+        }
+      },
+      "figure": "I2T_lora_top5_failure.png",
+      "candidate_count": 25
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-30",
+  "scope": "Restore and report flow in a separate Kaggle GPU session; no retraining.",
+  "evidence_basis": "Console outputs pasted by the user in the conversation. The subsequently uploaded notebook is source-only and has no embedded outputs. Original captured experiment outputs remain in 01_experiment_record.ipynb.",
+  "uploaded_filename": "clip-flickr30k-restore-check.ipynb",
+  "uploaded_code_cells": 12,
+  "uploaded_embedded_output_count": 0,
+  "organized_source_cells_matched": 11,
+  "extra_cell": "Read-only artifact integrity check; 26 required files present.",
+  "restore_output_directory": "/kaggle/working/clip_retrieval_restored",
+  "files_restored_with_matching_sha256": 76,
+  "required_files_checked": 26,
+  "missing_required_files": [],
+  "base_weight_hash_match": true,
+  "checkpoints_loaded_and_forward_checked": [
+    "B42",
+    "C42",
+    "B43",
+    "C43",
+    "B44",
+    "C44"
+  ],
+  "validation": {
+    "model": "C_seed42",
+    "images": 1014,
+    "captions": 5070,
+    "mR": 89.53320184089415,
+    "max_absolute_metric_difference": 0.0
+  },
+  "saved_test_table_read": true,
+  "test_inference_rerun": false,
+  "retrieval_visualization": "User reported successful execution.",
+  "complexity": "Reading saved compute counts.",
+  "timing": "Reading saved timing measurements; the benchmark is not rerun.",
+  "training_history": {
+    "experiments": 6,
+    "epochs": 30,
+    "origin": "Saved summaries; not newly executed training."
+  },
+  "reporting_sections": "User followed the restoration sequence through final history archiving; the new source export contains no captured figure outputs.",
+  "full_training_entry": "Static/CPU checks only; not rerun end-to-end in a new Kaggle GPU session.",
+  "organized_restore_source_sha256": "9678538a530df1bb89aef590cde69818e892904505dd362aa36b34977642eb69"
+}

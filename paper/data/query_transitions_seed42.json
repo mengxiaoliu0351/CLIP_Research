@@ -1,0 +1,21 @@
+{
+  "source": "saved test rank arrays; no new inference",
+  "rows": [
+    {
+      "direction": "I2T",
+      "queries": 1000,
+      "both_top1": 750,
+      "A_only_top1": 43,
+      "C_only_top1": 89,
+      "neither_top1": 118
+    },
+    {
+      "direction": "T2I",
+      "queries": 5000,
+      "both_top1": 2785,
+      "A_only_top1": 157,
+      "C_only_top1": 673,
+      "neither_top1": 1385
+    }
+  ]
+}
